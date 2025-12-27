@@ -63,7 +63,7 @@
                 BorderThickness="1"
                 Background="#EDEDED">
 
-            <views:DesignCanvasView/>
+            <views:DesignCanvasView Loaded="DesignCanvasView_Loaded"/>
         </Border>
 
         <!-- ===== プロパティ表示 ===== -->

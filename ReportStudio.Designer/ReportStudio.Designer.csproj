@@ -62,13 +62,15 @@
     </Compile>
     <Compile Include="ViewModels\BandViewModel.cs" />
     <Compile Include="ViewModels\DesignerViewModel.cs" />
+    <Compile Include="Views\DesignCanvasView.xaml.cs">
+      <DependentUpon>DesignCanvasView.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
-    <Page Include="Views\MainWindow.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
+    <Compile Include="Views\PropertyView.xaml.cs">
+      <DependentUpon>PropertyView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">
@@ -100,10 +102,25 @@
     <Folder Include="Services\" />
   </ItemGroup>
   <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\ReportStudio.Domain\ReportStudio.Domain.csproj">
-      <Project>{14e8e2cd-84f4-4f1c-8753-5e85940b08d4}</Project>
+      <Project>{4cfe55af-af84-4218-9cce-d910efad5253}</Project>
       <Name>ReportStudio.Domain</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="Views\DesignCanvasView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\MainWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\PropertyView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
