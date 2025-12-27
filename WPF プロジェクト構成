@@ -1,0 +1,14 @@
+ReportStudio.Designer
+├ Views
+│ ├ MainWindow.xaml
+│ ├ DesignCanvasView.xaml
+│ ├ BandView.xaml
+│ └ PropertyView.xaml
+├ ViewModels
+│ ├ DesignerViewModel.cs
+│ ├ BandViewModel.cs
+│ └ ControlViewModel.cs
+├ Services
+│ ├ SelectionService.cs
+│ └ DesignCanvasService.cs
+└ App.xaml

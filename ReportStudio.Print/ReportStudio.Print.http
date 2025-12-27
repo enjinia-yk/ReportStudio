@@ -1,0 +1,6 @@
+@ReportStudio.Print_HostAddress = http://localhost:5215
+
+GET {{ReportStudio.Print_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
